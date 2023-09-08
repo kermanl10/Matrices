@@ -3,21 +3,17 @@ using namespace std;
 
 int main() {
     int M,m,N,n,B,b;
-    cout<<"1.dizi kaç satırlı olucak?";
+    cout<<"1.dizi kaç satırlı olucak: ";
     cin>>M;
-     cout<<"1.dizi kaç sütunlu olucak?";
+     cout<<"1.dizi kaç sütunlu olucak: ";
     cin>>m;
-     cout<<"2.dizi kaç satırlı olucak?";
+     cout<<"2.dizi kaç satırlı olucak: ";
     cin>>N;
-     cout<<"2.dizi kaç sütunlu olucak?";
+     cout<<"2.dizi kaç sütunlu olucak: "; 
     cin>>n;
-     cout<<"toplam dizi kaç satırlı olacak?";
-    cin>>B;
-     cout<<"toplam dizi kaç sütunlu olucak?";
-    cin>>b;
+
 	int ary[M][m];
 	int Ary[N][n];
-	int Tary[B][b];
 	for (int i = 0; i < M; i++) {
 		for (int j = 0; j < m; j++) {
 		
@@ -46,18 +42,20 @@ int main() {
 
 			cout << Ary[i][j] << "\t";
 		}
-	}
+	}int Tary[M][m],satırToplam=0,sutunToplam=0;
 	cout << "Bu Ikinci Diziniz" << endl;
-	for (int i = 0; i < B; i++) {
-		for (int j = 0; j < b; j++) {
+	for (int i = 0; i < M; i++) {
+		for (int j = 0; j < m; j++) {
 			Tary[i][j] = Ary[i][j] + ary[i][j];
 		}
-}
-	for (int i = 0; i < B; i++) {
-		cout << endl;
-		for (int j = 0; j < b; j++) {
+} cout<<"Dizilerin Toplamı"<<endl;
+	for (int i = 0; i < M; i++) {
+		cout <<endl;
+		for (int j = 0; j < m; j++) {
+		    satırToplam+=Tary[i][j];
 			cout << Tary[i][j] << "\t";
 		}
+		cout<<"  "<<satırToplam<<endl;
+		satırToplam=0;
 	}
-	cout<<"Dizilerin Toplamı"<<endl;
 }
