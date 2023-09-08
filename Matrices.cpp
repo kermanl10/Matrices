@@ -1,15 +1,19 @@
 #include<iostream>
+#include<stdlib.h>
+#include<time.h>
 using namespace std;
 
 int main() {
-    int M,m,N,n,B,b;
-    cout<<"1.dizi kaç satırlı olucak: ";
+	system("CLS");
+    srand(time(nullptr));
+    int M,m,N,n;
+    cout<<"1.dizi kac satirli olucak: ";
     cin>>M;
-     cout<<"1.dizi kaç sütunlu olucak: ";
+     cout<<"1.dizi kac sutunlu olucak: ";
     cin>>m;
-     cout<<"2.dizi kaç satırlı olucak: ";
+     cout<<"2.dizi kac satirli olucak: ";
     cin>>N;
-     cout<<"2.dizi kaç sütunlu olucak: "; 
+     cout<<"2.dizi kac sutunlu olucak: "; 
     cin>>n;
 
 	int ary[M][m];
@@ -42,20 +46,29 @@ int main() {
 
 			cout << Ary[i][j] << "\t";
 		}
-	}int Tary[M][m],satırToplam=0,sutunToplam=0;
+	}
+    double Tary[M][m],satirToplam=0,Sary[m];
+    int x;
 	cout << "Bu Ikinci Diziniz" << endl;
+    cout<<endl;
 	for (int i = 0; i < M; i++) {
 		for (int j = 0; j < m; j++) {
 			Tary[i][j] = Ary[i][j] + ary[i][j];
 		}
-} cout<<"Dizilerin Toplamı"<<endl;
+    } 
+    cout<<"Dizilerin Toplami"<<endl;
 	for (int i = 0; i < M; i++) {
 		cout <<endl;
 		for (int j = 0; j < m; j++) {
-		    satırToplam+=Tary[i][j];
+            if(i==j)x+=Tary[i][j];
+		    satirToplam+=Tary[i][j];
+            Sary[j]+=Tary[i][j];
 			cout << Tary[i][j] << "\t";
 		}
-		cout<<"  "<<satırToplam<<endl;
-		satırToplam=0;
+		cout<<"  "<<satirToplam<<endl;
+		satirToplam=0;
+      
 	}
+	for(int i = 0; i < m; i++) cout<<Sary[i]<<"\t";
+    cout<<x;
 }
