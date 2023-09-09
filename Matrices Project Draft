@@ -3,13 +3,13 @@ using namespace std;
 
 int main() {
     int M,m,N,n,B,b;
-    cout<<"1.dizi kaç satirli olucak: ";
+    cout<<"1.dizi kac satirli olucak: ";
     cin>>M;
-     cout<<"1.dizi kaç sutunlu olucak: ";
+     cout<<"1.dizi kac sutunlu olucak: ";
     cin>>m;
-     cout<<"2.dizi kaç satirli olucak: ";
+     cout<<"2.dizi kac satirli olucak: ";
     cin>>N;
-     cout<<"2.dizi kaç sutunlu olucak: "; 
+     cout<<"2.dizi kac sutunlu olucak: "; 
     cin>>n;
 
 	int ary[M][m];
