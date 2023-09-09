@@ -3,13 +3,13 @@ using namespace std;
 
 int main() {
     int M,m,N,n,B,b;
-    cout<<"1.dizi kaç satırlı olucak: ";
+    cout<<"1.dizi kaç satirli olucak: ";
     cin>>M;
-     cout<<"1.dizi kaç sütunlu olucak: ";
+     cout<<"1.dizi kaç sutunlu olucak: ";
     cin>>m;
-     cout<<"2.dizi kaç satırlı olucak: ";
+     cout<<"2.dizi kaç satirli olucak: ";
     cin>>N;
-     cout<<"2.dizi kaç sütunlu olucak: "; 
+     cout<<"2.dizi kaç sutunlu olucak: "; 
     cin>>n;
 
 	int ary[M][m];
@@ -42,20 +42,20 @@ int main() {
 
 			cout << Ary[i][j] << "\t";
 		}
-	}int Tary[M][m],satırToplam=0,sutunToplam=0;
+	}int Tary[M][m],satirToplam=0,sutunToplam=0;
 	cout << "Bu Ikinci Diziniz" << endl;
 	for (int i = 0; i < M; i++) {
 		for (int j = 0; j < m; j++) {
 			Tary[i][j] = Ary[i][j] + ary[i][j];
 		}
-} cout<<"Dizilerin Toplamı"<<endl;
+} cout<<"Dizilerin Toplami"<<endl;
 	for (int i = 0; i < M; i++) {
 		cout <<endl;
 		for (int j = 0; j < m; j++) {
-		    satırToplam+=Tary[i][j];
+		    satirToplam+=Tary[i][j];
 			cout << Tary[i][j] << "\t";
 		}
-		cout<<"  "<<satırToplam<<endl;
-		satırToplam=0;
+		cout<<"  "<<satirToplam<<endl;
+		satirToplam=0;
 	}
 }
