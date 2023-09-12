@@ -6,6 +6,8 @@ using namespace std;
 int main() {
 	system("CLS");
     srand(time(nullptr));
+	/*Even if the code works properly, when writing the sum of the trailing columns, 
+	  complex numbers will be given due to the language problem.*/
     int M,m,N,n;
     cout<<"How many rows will your first array consist of?: ";
     cin>>M;
@@ -57,6 +59,8 @@ int main() {
 		}
     } 
     cout<<"Total of Your Sequences"<<endl;
+	/*When you run your code, the numbers at the bottom will give you the total of the columns of your array, 
+	  and the numbers at the bottom right will give you the sum of the array elements diagonally in your total array.*/
 	for (int i = 0; i < M; i++) {
 		cout <<endl;
 		for (int j = 0; j < m; j++) {
