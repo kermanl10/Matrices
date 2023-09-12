@@ -7,13 +7,13 @@ int main() {
 	system("CLS");
     srand(time(nullptr));
     int M,m,N,n;
-    cout<<"1.dizi kac satirli olucak: ";
+    cout<<"How many rows will your first array consist of?: ";
     cin>>M;
-     cout<<"1.dizi kac sutunlu olucak: ";
+     cout<<"How many columns will your first array consist of?: ";
     cin>>m;
-     cout<<"2.dizi kac satirli olucak: ";
+     cout<<"How many rows will your second series consist of?: ";
     cin>>N;
-     cout<<"2.dizi kac sutunlu olucak: "; 
+     cout<<"How many columns will your second array consist of?: "; 
     cin>>n;
 
 	int ary[M][m];
@@ -38,7 +38,7 @@ int main() {
 			}
 		
 	}
-	cout << "Bu Birinci Diziniz" << endl;
+	cout << "Your First Series" << endl;
 	for (int i = 0; i < N; i++) {
 		cout << endl;
 		for (int j = 0; j < n; j++) {
@@ -49,14 +49,14 @@ int main() {
 	}
     double Tary[M][m],satirToplam=0,Sary[m];
     int x;
-	cout << "Bu Ikinci Diziniz" << endl;
+	cout << "Your Second Series" << endl;
     cout<<endl;
 	for (int i = 0; i < M; i++) {
 		for (int j = 0; j < m; j++) {
 			Tary[i][j] = Ary[i][j] + ary[i][j];
 		}
     } 
-    cout<<"Dizilerin Toplami"<<endl;
+    cout<<"Total of Your Sequences"<<endl;
 	for (int i = 0; i < M; i++) {
 		cout <<endl;
 		for (int j = 0; j < m; j++) {
