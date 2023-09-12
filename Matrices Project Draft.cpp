@@ -49,6 +49,8 @@ int main() {
 			Tary[i][j] = Ary[i][j] + ary[i][j];
 		}
 } cout<<"Total of Sequences"<<endl;
+/*When you run it, 
+  the numbers next to the arrays will give you the sum of the rows of your total array.*/
 	for (int i = 0; i < M; i++) {
 		cout <<endl;
 		for (int j = 0; j < m; j++) {
