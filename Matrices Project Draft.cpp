@@ -3,13 +3,13 @@ using namespace std;
 
 int main() {
     int M,m,N,n,B,b;
-    cout<<"1.dizi kac satirli olucak: ";
+    cout<<"How many rows will your first array consist of?: ";
     cin>>M;
-     cout<<"1.dizi kac sutunlu olucak: ";
+     cout<<"How many columns will your first array consist of?: ";
     cin>>m;
-     cout<<"2.dizi kac satirli olucak: ";
+     cout<<"How many rows will your second series consist of?: ";
     cin>>N;
-     cout<<"2.dizi kac sutunlu olucak: "; 
+     cout<<"How many columns will your second array consist of?: "; 
     cin>>n;
 
 	int ary[M][m];
@@ -34,7 +34,7 @@ int main() {
 			}
 		
 	}
-	cout << "Bu Birinci Diziniz" << endl;
+	cout << "Your First Series" << endl;
 	for (int i = 0; i < N; i++) {
 		cout << endl;
 		for (int j = 0; j < n; j++) {
@@ -43,12 +43,12 @@ int main() {
 			cout << Ary[i][j] << "\t";
 		}
 	}int Tary[M][m],satirToplam=0,sutunToplam=0;
-	cout << "Bu Ikinci Diziniz" << endl;
+	cout << "Your Second Series" << endl;
 	for (int i = 0; i < M; i++) {
 		for (int j = 0; j < m; j++) {
 			Tary[i][j] = Ary[i][j] + ary[i][j];
 		}
-} cout<<"Dizilerin Toplami"<<endl;
+} cout<<"Total of Sequences"<<endl;
 	for (int i = 0; i < M; i++) {
 		cout <<endl;
 		for (int j = 0; j < m; j++) {
