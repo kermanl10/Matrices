@@ -31,7 +31,7 @@ int main()
 			for (int j = 0; j < m; j++)
 			{
 
-				ary[i][j] = rand() % 4 + 1;
+				ary[i][j] = rand() % 99 + 1;
 			}
 		}
 
@@ -40,7 +40,7 @@ int main()
 			for (int j = 0; j < n; j++)
 			{
 
-				Ary[i][j] = rand() % 4 + 1;
+				Ary[i][j] = rand() % 99 + 1;
 			}
 		}
 		for (int i = 0; i < M; i++)
